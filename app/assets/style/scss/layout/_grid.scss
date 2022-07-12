@@ -1,0 +1,95 @@
+:root {
+	--columns: #{$grid-columns};
+	--air-l: 30px;
+	--air-b: 20px;
+}
+
+@mixin row-flex {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 0 calc(var(--air-b) * -1) calc(var(--air-l) * -1);
+}
+
+@mixin col {
+	margin: 0 0 var(--air-b) var(--air-l);
+	word-wrap: break-word;
+}
+
+@mixin size($n, $afterText: "") {
+	$after_text: "";
+
+	width: calc(100% / var(--columns) * #{$n} - var(--air-l)) #{$afterText};
+}
+
+.col {
+	@include col();
+}
+
+.row,
+[class*="row-cols"] {
+	--air-l: 30px;
+	--air-b: 30px;
+
+	@include row-flex;
+
+	& > * {
+		flex: 0 0 auto;
+		@include col;
+	}
+}
+
+@for $i from 1 through $grid-columns {
+	.row-cols-#{$i} {
+		& > * {
+			width: calc(100% / var(--columns) * #{$grid-columns/$i} - var(--air-l));
+		}
+	}
+
+	.col-#{$i} {
+		width: calc(100% / #{$grid-columns} * #{$i} - var(--air-l));
+	}
+}
+
+@for $i from 0 through 60 {
+	@if $i % 5 == 0 {
+		.gx-#{$i},
+		.g-#{$i} {
+			--air-l: #{$i}px !important;
+		}
+
+		.gy-#{$i},
+		.g-#{$i} {
+			--air-b: #{$i}px !important;
+		}
+	}
+}
+
+@each $break, $value_break in $breakpoints {
+	@media (max-width: $value_break) {
+		@for $i from 0 through 60 {
+			@if $i % 5 == 0 {
+				.gx-#{$break}-#{$i},
+				.g-#{$break}-#{$i} {
+					--air-l: #{$i}px !important;
+				}
+
+				.gy-#{$break}-#{$i},
+				.g-#{$break}-#{$i} {
+					--air-b: #{$i}px !important;
+				}
+			}
+		}
+
+		@for $i from 1 through $grid-columns {
+			.row-cols-#{$break}-#{$i} {
+				& > * {
+					width: calc(100% / #{$grid-columns} * #{$grid-columns/$i} - var(--air-l));
+				}
+			}
+
+			.col-#{$break}-#{$i} {
+				width: calc(100% / #{$grid-columns} * #{$i} - var(--air-l));
+			}
+		}
+	}
+}
