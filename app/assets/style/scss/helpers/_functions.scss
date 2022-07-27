@@ -3,7 +3,7 @@
 }
 
 @function rem($value) {
-	@return #{floor(($value / $fz) * 100) / 100}rem;
+	@return #{floor(($value / $fz) * 1000) / 1000}rem;
 }
 
 @function em($childSize, $parentSize) {

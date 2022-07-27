@@ -9,5 +9,10 @@
 	}
 }
 
+@include font-face(Montserrat, 300, "./../../fonts/", Montserrat-Light);
 @include font-face(Montserrat, 400, "./../../fonts/", Montserrat-Regular);
+@include font-face(Montserrat, 500, "./../../fonts/", Montserrat-Medium);
+@include font-face(Montserrat, 500, "./../../fonts/", Montserrat-MediumItalic, italic);
+@include font-face(Montserrat, 600, "./../../fonts/", Montserrat-SemiBold);
+@include font-face(Montserrat, 700, "./../../fonts/", Montserrat-Bold);
 

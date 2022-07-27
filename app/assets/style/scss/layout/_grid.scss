@@ -1,24 +1,24 @@
 :root {
 	--columns: #{$grid-columns};
-	--air-l: 30px;
-	--air-b: 20px;
+	--air-x: 30px;
+	--air-y: 20px;
 }
 
 @mixin row-flex {
 	display: flex;
 	flex-wrap: wrap;
-	margin: 0 0 calc(var(--air-b) * -1) calc(var(--air-l) * -1);
+	margin: 0 0 calc(var(--air-y) * -1) calc(var(--air-x) * -1);
 }
 
 @mixin col {
-	margin: 0 0 var(--air-b) var(--air-l);
+	margin: 0 0 var(--air-y) var(--air-x);
 	word-wrap: break-word;
 }
 
 @mixin size($n, $afterText: "") {
 	$after_text: "";
 
-	width: calc(100% / var(--columns) * #{$n} - var(--air-l)) #{$afterText};
+	width: calc(100% / var(--columns) * #{$n} - var(--air-x)) #{$afterText};
 }
 
 .col {
@@ -27,8 +27,8 @@
 
 .row,
 [class*="row-cols"] {
-	--air-l: 30px;
-	--air-b: 30px;
+	--air-x: 30px;
+	--air-y: 30px;
 
 	@include row-flex;
 
@@ -41,12 +41,12 @@
 @for $i from 1 through $grid-columns {
 	.row-cols-#{$i} {
 		& > * {
-			width: calc(100% / var(--columns) * #{$grid-columns/$i} - var(--air-l));
+			width: calc(100% / var(--columns) * #{$grid-columns/$i} - var(--air-x));
 		}
 	}
 
 	.col-#{$i} {
-		width: calc(100% / #{$grid-columns} * #{$i} - var(--air-l));
+		width: calc(100% / #{$grid-columns} * #{$i} - var(--air-x));
 	}
 }
 
@@ -54,12 +54,12 @@
 	@if $i % 5 == 0 {
 		.gx-#{$i},
 		.g-#{$i} {
-			--air-l: #{$i}px !important;
+			--air-x: #{$i}px !important;
 		}
 
 		.gy-#{$i},
 		.g-#{$i} {
-			--air-b: #{$i}px !important;
+			--air-y: #{$i}px !important;
 		}
 	}
 }
@@ -70,12 +70,12 @@
 			@if $i % 5 == 0 {
 				.gx-#{$break}-#{$i},
 				.g-#{$break}-#{$i} {
-					--air-l: #{$i}px !important;
+					--air-x: #{$i}px !important;
 				}
 
 				.gy-#{$break}-#{$i},
 				.g-#{$break}-#{$i} {
-					--air-b: #{$i}px !important;
+					--air-y: #{$i}px !important;
 				}
 			}
 		}
@@ -83,12 +83,12 @@
 		@for $i from 1 through $grid-columns {
 			.row-cols-#{$break}-#{$i} {
 				& > * {
-					width: calc(100% / #{$grid-columns} * #{$grid-columns/$i} - var(--air-l));
+					width: calc(100% / #{$grid-columns} * #{$grid-columns/$i} - var(--air-x));
 				}
 			}
 
 			.col-#{$break}-#{$i} {
-				width: calc(100% / #{$grid-columns} * #{$i} - var(--air-l));
+				width: calc(100% / #{$grid-columns} * #{$i} - var(--air-x));
 			}
 		}
 	}
