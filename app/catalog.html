@@ -1,0 +1,986 @@
+<!DOCTYPE html>
+<html class="page catalog-pg" lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="ArtBro">
+	<title>Каталог</title>
+	<!-- uikit css -->
+	<link rel="stylesheet" href="assets/vendors/uikit/uikit.min.css">
+	<!-- swiper css -->
+	<link rel="stylesheet" href="assets/vendors/swiper/swiper-bundle.min.css">
+	<!-- main css -->
+	<link rel="stylesheet" href="assets/style/css/style.css">
+</head>
+
+<body>
+	<div class="site">
+		
+					<!-- HEADER -->
+<header class="header">
+	<!-- top header -->
+	<div class="header__top">
+		<div class="header__top-container container">
+			<!-- logo -->
+			<a class="d-none d-md-inline-flex header__logo logo" href="#">
+				<img src="./assets/img/logo.svg" alt="Фабрика мебели «Домовой»">
+			</a>
+			<!-- tels -->
+			<div class="msgrs mr-md-0">
+				<div class="msgrs__list">
+					<a class="msgrs__link msgrs__link--viber" href="https://msngr.link/vi/+375445100164">
+						<svg>
+							<use xlink:href="assets/img/icons/ui/sprite.svg#viber"></use>
+						</svg>
+					</a>
+					<a class="msgrs__link msgrs__link--tg" href="https://msngr.link/tg/+375445100164">
+						<svg>
+							<use xlink:href="assets/img/icons/ui/sprite.svg#telegram"></use>
+						</svg>
+					</a>
+					<a class="msgrs__link msgrs__link--phone" href="tel:+375445100164">
+						+375 44 <b>510 01 64</b>
+					</a>
+				</div>
+			</div>
+			<!-- tels -->
+			<div class="d-md-none msgrs">
+				<div class="msgrs__list">
+					<a class="msgrs__link msgrs__link--tel">
+						<svg>
+							<use xlink:href="assets/img/icons/ui/sprite.svg#tel"></use>
+						</svg>
+					</a>
+					<a class="d-xl-none msgrs__link msgrs__link--phone" href="tel:+375445100164">
+						+375 44 <b>510 01 64</b>
+					</a>
+				</div>
+			</div>
+			<!-- header nav -->
+			<nav class="header__top-nav ml-auto">
+				<ul class="header__nav-list nav nav--direction_row">
+					<li class="nav__item">
+						<a class="nav__link" href="#">О компании</a>
+					</li>
+					<li class="nav__item">
+						<a class="nav__link" href="#">Оплата</a>
+					</li>
+					<li class="nav__item">
+						<a class="nav__link" href="#">Доставка</a>
+					</li>
+					<li class="nav__item">
+						<a class="nav__link" href="#">Рассрочка</a>
+					</li>
+					<li class="nav__item">
+						<a class="nav__link" href="#">Производство</a>
+					</li>
+					<li class="nav__item">
+						<a class="nav__link" href="#">Блог</a>
+					</li>
+				</ul>
+			</nav>
+			<button class="d-md-none header__btn-callback btn-ic btn-ic--size_s btn-ic--round btn-ic--accent" type="button"
+				data-trigger-modal="callback">
+				<span class="btn-ic__icon">
+					<svg aria-hidden="true">
+						<use xlink:href="assets/img/icons/ui/sprite.svg#phone-call"></use>
+					</svg>
+				</span>
+			</button>
+		</div>
+	</div>
+	<!-- middle header -->
+	<div class="header__middle">
+		<div class="header__middle-container container">
+			<!-- logo -->
+			<a class="d-md-none header__logo logo" href="#">
+				<img src="./assets/img/logo.svg" alt="Фабрика мебели «Домовой»">
+			</a>
+			<!-- btn hamburger -->
+			<button class="header__btn-catalog btn btn--size_xxs btn--bg_dark btn--opening" type="button"
+				aria-label="Открыть каталог">
+				<span class="btn__hamburger hamburger">
+					<span></span>
+				</span>
+				<span class="btn__value">Каталог</span>
+			</button>
+			<!-- search -->
+			<form class="mr-sm-0 header__search search">
+				<label class="search__inner">
+					<input class="search__input" type="search" placeholder="Поиск">
+					<button class="search__submit" type="submit" aria-label="Поиск">
+						<svg>
+							<use xlink:href="./assets/img/icons/ui/sprite.svg#search"></use>
+						</svg>
+					</button>
+				</label>
+			</form>
+			<div class="header__btns-icon">
+				<a class="btn-ic btn-ic--size_l btn-ic--compare" href="#">
+					<span class="btn-ic__icon">
+						<svg aria-hidden="true">
+							<use xlink:href="assets/img/icons/ui/sprite.svg#balance"></use>
+						</svg>
+					</span>
+					<strong class="btn-ic__count">0</strong>
+				</a>
+				<a class="btn-ic btn-ic--size_l btn-ic--fav" href="#">
+					<span class="btn-ic__icon">
+						<svg aria-hidden="true">
+							<use xlink:href="assets/img/icons/ui/sprite.svg#heart"></use>
+						</svg>
+					</span>
+					<strong class="btn-ic__count">0</strong>
+				</a>
+				<a class="btn-ic btn-ic--size_l btn-ic--basket" href="#">
+					<span class="btn-ic__icon">
+						<svg aria-hidden="true">
+							<use xlink:href="assets/img/icons/ui/sprite.svg#cart"></use>
+						</svg>
+					</span>
+					<strong class="btn-ic__count">0</strong>
+				</a>
+			</div>
+		</div>
+	</div>
+	<!-- header bottom -->
+	<div class="header__bottom" theme-color="dark">
+		<div class="header__bottom-container container">
+			<!-- header nav -->
+			<nav class="header__bottom-nav">
+				<ul class="header__nav-list nav nav--direction_row">
+					<li class="nav__item">
+						<a class="nav__link" href="#">Акции</a>
+					</li>
+					<li class="nav__item">
+						<a class="nav__link" href="#">Распродажи</a>
+					</li>
+					<li class="nav__item">
+						<a class="nav__link" href="#">Диваны</a>
+					</li>
+					<li class="nav__item">
+						<a class="nav__link" href="#">Кровати</a>
+					</li>
+					<li class="nav__item">
+						<a class="nav__link" href="#">Элитная</a>
+					</li>
+				</ul>
+			</nav>
+			<!-- copy -->
+			<button class="ml-auto btn-link" type="button" aria-label="Копировать почту" title="Почта">
+				<span class="btn-link__icon">
+					<svg height="30" width="30" aria-hidden="true">
+						<use xlink:href="assets/img/icons/ui/sprite.svg#copy"></use>
+					</svg>
+				</span>
+				<span data-copy="info@autobis.org" class="btn-link__text">info@.domovoy.by</span>
+			</button>
+			<!-- copy -->
+			<a class="fw-700 btn-link" aria-label="Наши магазины">
+				<span class="btn-link__icon">
+					<svg height="30" width="30" aria-hidden="true">
+						<use xlink:href="assets/img/icons/ui/sprite.svg#loc"></use>
+					</svg>
+				</span>
+				<span class="btn-link__text">Наши магазины</span>
+			</a>
+		</div>
+	</div>
+</header>				
+		
+		
+		<!-- CONTENT WRAP -->
+		<div class="site__content">
+			
+	<div class="container">
+		<div class="title-block">
+			<h1 class="title-block__title h2">Каталог</h1>
+			<div class="title-block__side">Только самые качесвтенные товары</div>
+		</div>
+		<div class="catalog-b">
+			<!-- collection row -->
+			<div class="catalog-b__collection">
+				<div class="catalog-b__collection-grid">
+					<a class="catalog-b__collection-main-card catalog-card">
+						<span class="catalog-card__img">
+							<img data-src="docs/img/catalog/dlya-spalni.jpg" uk-img="" alt="Кровати" loading="lazy" src="docs/img/catalog/dlya-spalni.jpg">
+						</span>
+						<span class="catalog-card__title">Кровати</span>
+					</a>
+					<!-- slider wrapper -->
+					<div class="catalog-b__collection-slider catalog-slider-wrap slider-wrap">
+						<!-- slider -->
+						<div class="catalog-slider swiper">
+							<div class="swiper-wrapper">
+								<!-- slide -->
+								<a class="catalog-slider__slide category-card swiper-slide">
+									<span class="category-card__img">
+										<img src="docs/img/test/category-divan.jpg" alt="Диваны для кухни">
+									</span>
+									<span class="category-card__title">
+										Диваны для кухни
+									</span>
+								</a>
+								<!-- slide -->
+								<a class="catalog-slider__slide category-card swiper-slide">
+									<span class="category-card__img">
+										<img src="docs/img/test/category-sofi.jpg" alt="Софы, скамьи">
+									</span>
+									<span class="category-card__title">
+										Софы, скамьи
+									</span>
+								</a>
+								<!-- slide -->
+								<a class="catalog-slider__slide category-card swiper-slide">
+									<span class="category-card__img">
+										<img src="docs/img/test/category-divan.jpg" alt="Диваны для кухни">
+									</span>
+									<span class="category-card__title">
+										Диваны для кухни
+									</span>
+								</a>
+								<!-- slide -->
+								<a class="catalog-slider__slide category-card swiper-slide">
+									<span class="category-card__img">
+										<img src="docs/img/test/category-sofi.jpg" alt="Софы, скамьи">
+									</span>
+									<span class="category-card__title">
+										Софы, скамьи
+									</span>
+								</a>
+								<!-- slide -->
+								<a class="catalog-slider__slide category-card swiper-slide">
+									<span class="category-card__img">
+										<img src="docs/img/test/category-divan.jpg" alt="Диваны для кухни">
+									</span>
+									<span class="category-card__title">
+										Диваны для кухни
+									</span>
+								</a>
+								<!-- slide -->
+								<a class="catalog-slider__slide category-card swiper-slide">
+									<span class="category-card__img">
+										<img src="docs/img/test/category-sofi.jpg" alt="Софы, скамьи">
+									</span>
+									<span class="category-card__title">
+										Софы, скамьи
+									</span>
+								</a>
+								<!-- slide -->
+								<a class="catalog-slider__slide category-card swiper-slide">
+									<span class="category-card__img">
+										<img src="docs/img/test/category-divan.jpg" alt="Диваны для кухни">
+									</span>
+									<span class="category-card__title">
+										Диваны для кухни
+									</span>
+								</a>
+								<!-- slide -->
+								<a class="catalog-slider__slide category-card swiper-slide">
+									<span class="category-card__img">
+										<img src="docs/img/test/category-sofi.jpg" alt="Софы, скамьи">
+									</span>
+									<span class="category-card__title">
+										Софы, скамьи
+									</span>
+								</a>
+							</div>
+						</div>
+						<!-- nav slider -->
+						<div class="catalog-slider-nav slider-nav">
+							<button class="slider-arr slider-arr--prev btn-ic btn-ic--size_s btn-ic--round" type="button" aria-label="Предыдущий слайдер">
+								<span class="btn-ic__icon">
+									<svg aria-hidden="true">
+										<use xlink:href="assets/img/icons/ui/sprite.svg#angle"></use>
+									</svg>
+								</span>
+							</button>
+
+							<button class="slider-arr slider-arr--next btn-ic btn-ic--size_s btn-ic--round" aria-label="Следующий слайдер">
+								<span class="btn-ic__icon">
+									<svg aria-hidden="true">
+										<use xlink:href="assets/img/icons/ui/sprite.svg#angle"></use>
+									</svg>
+								</span>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- collection row -->
+			<div class="catalog-b__collection">
+				<div class="catalog-b__collection-grid">
+					<a class="catalog-b__collection-main-card catalog-card">
+						<span class="catalog-card__img">
+							<img data-src="docs/img/catalog/stoli-2.jpg" uk-img alt="Столы и стулья">
+						</span>
+						<span class="catalog-card__title">Столы и стулья</span>
+					</a>
+					<!-- slider wrapper -->
+					<div class="catalog-b__collection-slider catalog-slider-wrap slider-wrap">
+						<!-- slider -->
+						<div class="catalog-slider swiper">
+							<div class="swiper-wrapper">
+								<!-- slide -->
+								<a class="catalog-slider__slide category-card swiper-slide">
+									<span class="category-card__img">
+										<img src="docs/img/test/category-divan.jpg" alt="Диваны для кухни">
+									</span>
+									<span class="category-card__title">
+										Диваны для кухни
+									</span>
+								</a>
+								<!-- slide -->
+								<a class="catalog-slider__slide category-card swiper-slide">
+									<span class="category-card__img">
+										<img src="docs/img/test/category-sofi.jpg" alt="Софы, скамьи">
+									</span>
+									<span class="category-card__title">
+										Софы, скамьи
+									</span>
+								</a>
+								<!-- slide -->
+								<a class="catalog-slider__slide category-card swiper-slide">
+									<span class="category-card__img">
+										<img src="docs/img/test/category-divan.jpg" alt="Диваны для кухни">
+									</span>
+									<span class="category-card__title">
+										Диваны для кухни
+									</span>
+								</a>
+								<!-- slide -->
+								<a class="catalog-slider__slide category-card swiper-slide">
+									<span class="category-card__img">
+										<img src="docs/img/test/category-sofi.jpg" alt="Софы, скамьи">
+									</span>
+									<span class="category-card__title">
+										Софы, скамьи
+									</span>
+								</a>
+								<!-- slide -->
+								<a class="catalog-slider__slide category-card swiper-slide">
+									<span class="category-card__img">
+										<img src="docs/img/test/category-divan.jpg" alt="Диваны для кухни">
+									</span>
+									<span class="category-card__title">
+										Диваны для кухни
+									</span>
+								</a>
+								<!-- slide -->
+								<a class="catalog-slider__slide category-card swiper-slide">
+									<span class="category-card__img">
+										<img src="docs/img/test/category-sofi.jpg" alt="Софы, скамьи">
+									</span>
+									<span class="category-card__title">
+										Софы, скамьи
+									</span>
+								</a>
+								<!-- slide -->
+								<a class="catalog-slider__slide category-card swiper-slide">
+									<span class="category-card__img">
+										<img src="docs/img/test/category-divan.jpg" alt="Диваны для кухни">
+									</span>
+									<span class="category-card__title">
+										Диваны для кухни
+									</span>
+								</a>
+								<!-- slide -->
+								<a class="catalog-slider__slide category-card swiper-slide">
+									<span class="category-card__img">
+										<img src="docs/img/test/category-sofi.jpg" alt="Софы, скамьи">
+									</span>
+									<span class="category-card__title">
+										Софы, скамьи
+									</span>
+								</a>
+							</div>
+						</div>
+						<!-- nav slider -->
+						<div class="catalog-slider-nav slider-nav">
+							<button class="slider-arr slider-arr--prev btn-ic btn-ic--size_s btn-ic--round" type="button" aria-label="Предыдущий слайдер">
+								<span class="btn-ic__icon">
+									<svg aria-hidden="true">
+										<use xlink:href="assets/img/icons/ui/sprite.svg#angle"></use>
+									</svg>
+								</span>
+							</button>
+
+							<button class="slider-arr slider-arr--next btn-ic btn-ic--size_s btn-ic--round" aria-label="Следующий слайдер">
+								<span class="btn-ic__icon">
+									<svg aria-hidden="true">
+										<use xlink:href="assets/img/icons/ui/sprite.svg#angle"></use>
+									</svg>
+								</span>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- collection row -->
+			<div class="catalog-b__collection">
+				<div class="catalog-b__collection-grid">
+					<a class="catalog-b__collection-main-card catalog-card">
+						<span class="catalog-card__img">
+							<img data-src="docs/img/catalog/dlya-gostinnoi.jpg" uk-img alt="Для гостинной">
+						</span>
+						<span class="catalog-card__title">Для гостинной</span>
+					</a>
+					<!-- slider wrapper -->
+					<div class="catalog-b__collection-slider catalog-slider-wrap slider-wrap">
+						<!-- slider -->
+						<div class="catalog-slider swiper">
+							<div class="swiper-wrapper">
+								<!-- slide -->
+								<a class="catalog-slider__slide category-card swiper-slide">
+									<span class="category-card__img">
+										<img src="docs/img/test/category-divan.jpg" alt="Диваны для кухни">
+									</span>
+									<span class="category-card__title">
+										Диваны для кухни
+									</span>
+								</a>
+								<!-- slide -->
+								<a class="catalog-slider__slide category-card swiper-slide">
+									<span class="category-card__img">
+										<img src="docs/img/test/category-sofi.jpg" alt="Софы, скамьи">
+									</span>
+									<span class="category-card__title">
+										Софы, скамьи
+									</span>
+								</a>
+								<!-- slide -->
+								<a class="catalog-slider__slide category-card swiper-slide">
+									<span class="category-card__img">
+										<img src="docs/img/test/category-divan.jpg" alt="Диваны для кухни">
+									</span>
+									<span class="category-card__title">
+										Диваны для кухни
+									</span>
+								</a>
+								<!-- slide -->
+								<a class="catalog-slider__slide category-card swiper-slide">
+									<span class="category-card__img">
+										<img src="docs/img/test/category-sofi.jpg" alt="Софы, скамьи">
+									</span>
+									<span class="category-card__title">
+										Софы, скамьи
+									</span>
+								</a>
+								<!-- slide -->
+								<a class="catalog-slider__slide category-card swiper-slide">
+									<span class="category-card__img">
+										<img src="docs/img/test/category-divan.jpg" alt="Диваны для кухни">
+									</span>
+									<span class="category-card__title">
+										Диваны для кухни
+									</span>
+								</a>
+								<!-- slide -->
+								<a class="catalog-slider__slide category-card swiper-slide">
+									<span class="category-card__img">
+										<img src="docs/img/test/category-sofi.jpg" alt="Софы, скамьи">
+									</span>
+									<span class="category-card__title">
+										Софы, скамьи
+									</span>
+								</a>
+								<!-- slide -->
+								<a class="catalog-slider__slide category-card swiper-slide">
+									<span class="category-card__img">
+										<img src="docs/img/test/category-divan.jpg" alt="Диваны для кухни">
+									</span>
+									<span class="category-card__title">
+										Диваны для кухни
+									</span>
+								</a>
+								<!-- slide -->
+								<a class="catalog-slider__slide category-card swiper-slide">
+									<span class="category-card__img">
+										<img src="docs/img/test/category-sofi.jpg" alt="Софы, скамьи">
+									</span>
+									<span class="category-card__title">
+										Софы, скамьи
+									</span>
+								</a>
+							</div>
+						</div>
+						<!-- nav slider -->
+						<div class="catalog-slider-nav slider-nav">
+							<button class="slider-arr slider-arr--prev btn-ic btn-ic--size_s btn-ic--round" type="button" aria-label="Предыдущий слайдер">
+								<span class="btn-ic__icon">
+									<svg aria-hidden="true">
+										<use xlink:href="assets/img/icons/ui/sprite.svg#angle"></use>
+									</svg>
+								</span>
+							</button>
+
+							<button class="slider-arr slider-arr--next btn-ic btn-ic--size_s btn-ic--round" aria-label="Следующий слайдер">
+								<span class="btn-ic__icon">
+									<svg aria-hidden="true">
+										<use xlink:href="assets/img/icons/ui/sprite.svg#angle"></use>
+									</svg>
+								</span>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- collection row -->
+			<div class="catalog-b__collection">
+				<div class="catalog-b__collection-grid">
+					<a class="catalog-b__collection-main-card catalog-card">
+						<span class="catalog-card__img">
+							<img data-src="docs/img/catalog/dlya-spalni.jpg" uk-img alt="Для спальни">
+						</span>
+						<span class="catalog-card__title">Для спальни</span>
+					</a>
+					<!-- slider wrapper -->
+					<div class="catalog-b__collection-slider catalog-slider-wrap slider-wrap">
+						<!-- slider -->
+						<div class="catalog-slider swiper">
+							<div class="swiper-wrapper">
+								<!-- slide -->
+								<a class="catalog-slider__slide category-card swiper-slide">
+									<span class="category-card__img">
+										<img src="docs/img/test/category-divan.jpg" alt="Диваны для кухни">
+									</span>
+									<span class="category-card__title">
+										Диваны для кухни
+									</span>
+								</a>
+								<!-- slide -->
+								<a class="catalog-slider__slide category-card swiper-slide">
+									<span class="category-card__img">
+										<img src="docs/img/test/category-sofi.jpg" alt="Софы, скамьи">
+									</span>
+									<span class="category-card__title">
+										Софы, скамьи
+									</span>
+								</a>
+								<!-- slide -->
+								<a class="catalog-slider__slide category-card swiper-slide">
+									<span class="category-card__img">
+										<img src="docs/img/test/category-divan.jpg" alt="Диваны для кухни">
+									</span>
+									<span class="category-card__title">
+										Диваны для кухни
+									</span>
+								</a>
+								<!-- slide -->
+								<a class="catalog-slider__slide category-card swiper-slide">
+									<span class="category-card__img">
+										<img src="docs/img/test/category-sofi.jpg" alt="Софы, скамьи">
+									</span>
+									<span class="category-card__title">
+										Софы, скамьи
+									</span>
+								</a>
+								<!-- slide -->
+								<a class="catalog-slider__slide category-card swiper-slide">
+									<span class="category-card__img">
+										<img src="docs/img/test/category-divan.jpg" alt="Диваны для кухни">
+									</span>
+									<span class="category-card__title">
+										Диваны для кухни
+									</span>
+								</a>
+								<!-- slide -->
+								<a class="catalog-slider__slide category-card swiper-slide">
+									<span class="category-card__img">
+										<img src="docs/img/test/category-sofi.jpg" alt="Софы, скамьи">
+									</span>
+									<span class="category-card__title">
+										Софы, скамьи
+									</span>
+								</a>
+								<!-- slide -->
+								<a class="catalog-slider__slide category-card swiper-slide">
+									<span class="category-card__img">
+										<img src="docs/img/test/category-divan.jpg" alt="Диваны для кухни">
+									</span>
+									<span class="category-card__title">
+										Диваны для кухни
+									</span>
+								</a>
+								<!-- slide -->
+								<a class="catalog-slider__slide category-card swiper-slide">
+									<span class="category-card__img">
+										<img src="docs/img/test/category-sofi.jpg" alt="Софы, скамьи">
+									</span>
+									<span class="category-card__title">
+										Софы, скамьи
+									</span>
+								</a>
+							</div>
+						</div>
+						<!-- nav slider -->
+						<div class="catalog-slider-nav slider-nav">
+							<button class="slider-arr slider-arr--prev btn-ic btn-ic--size_s btn-ic--round" type="button" aria-label="Предыдущий слайдер">
+								<span class="btn-ic__icon">
+									<svg aria-hidden="true">
+										<use xlink:href="assets/img/icons/ui/sprite.svg#angle"></use>
+									</svg>
+								</span>
+							</button>
+
+							<button class="slider-arr slider-arr--next btn-ic btn-ic--size_s btn-ic--round" aria-label="Следующий слайдер">
+								<span class="btn-ic__icon">
+									<svg aria-hidden="true">
+										<use xlink:href="assets/img/icons/ui/sprite.svg#angle"></use>
+									</svg>
+								</span>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- collection row -->
+			<div class="catalog-b__collection">
+				<div class="catalog-b__collection-grid">
+					<a class="catalog-b__collection-main-card catalog-card">
+						<span class="catalog-card__img">
+							<img data-src="docs/img/catalog/dlya-kabineta.jpg" uk-img alt="Для кабинета">
+						</span>
+						<span class="catalog-card__title">Для кабинета</span>
+					</a>
+					<!-- slider wrapper -->
+					<div class="catalog-b__collection-slider catalog-slider-wrap slider-wrap">
+						<!-- slider -->
+						<div class="catalog-slider swiper">
+							<div class="swiper-wrapper">
+								<!-- slide -->
+								<a class="catalog-slider__slide category-card swiper-slide">
+									<span class="category-card__img">
+										<img src="docs/img/test/category-divan.jpg" alt="Диваны для кухни">
+									</span>
+									<span class="category-card__title">
+										Диваны для кухни
+									</span>
+								</a>
+								<!-- slide -->
+								<a class="catalog-slider__slide category-card swiper-slide">
+									<span class="category-card__img">
+										<img src="docs/img/test/category-sofi.jpg" alt="Софы, скамьи">
+									</span>
+									<span class="category-card__title">
+										Софы, скамьи
+									</span>
+								</a>
+								<!-- slide -->
+								<a class="catalog-slider__slide category-card swiper-slide">
+									<span class="category-card__img">
+										<img src="docs/img/test/category-divan.jpg" alt="Диваны для кухни">
+									</span>
+									<span class="category-card__title">
+										Диваны для кухни
+									</span>
+								</a>
+								<!-- slide -->
+								<a class="catalog-slider__slide category-card swiper-slide">
+									<span class="category-card__img">
+										<img src="docs/img/test/category-sofi.jpg" alt="Софы, скамьи">
+									</span>
+									<span class="category-card__title">
+										Софы, скамьи
+									</span>
+								</a>
+								<!-- slide -->
+								<a class="catalog-slider__slide category-card swiper-slide">
+									<span class="category-card__img">
+										<img src="docs/img/test/category-divan.jpg" alt="Диваны для кухни">
+									</span>
+									<span class="category-card__title">
+										Диваны для кухни
+									</span>
+								</a>
+								<!-- slide -->
+								<a class="catalog-slider__slide category-card swiper-slide">
+									<span class="category-card__img">
+										<img src="docs/img/test/category-sofi.jpg" alt="Софы, скамьи">
+									</span>
+									<span class="category-card__title">
+										Софы, скамьи
+									</span>
+								</a>
+								<!-- slide -->
+								<a class="catalog-slider__slide category-card swiper-slide">
+									<span class="category-card__img">
+										<img src="docs/img/test/category-divan.jpg" alt="Диваны для кухни">
+									</span>
+									<span class="category-card__title">
+										Диваны для кухни
+									</span>
+								</a>
+								<!-- slide -->
+								<a class="catalog-slider__slide category-card swiper-slide">
+									<span class="category-card__img">
+										<img src="docs/img/test/category-sofi.jpg" alt="Софы, скамьи">
+									</span>
+									<span class="category-card__title">
+										Софы, скамьи
+									</span>
+								</a>
+							</div>
+						</div>
+						<!-- nav slider -->
+						<div class="catalog-slider-nav slider-nav">
+							<button class="slider-arr slider-arr--prev btn-ic btn-ic--size_s btn-ic--round" type="button" aria-label="Предыдущий слайдер">
+								<span class="btn-ic__icon">
+									<svg aria-hidden="true">
+										<use xlink:href="assets/img/icons/ui/sprite.svg#angle"></use>
+									</svg>
+								</span>
+							</button>
+
+							<button class="slider-arr slider-arr--next btn-ic btn-ic--size_s btn-ic--round" aria-label="Следующий слайдер">
+								<span class="btn-ic__icon">
+									<svg aria-hidden="true">
+										<use xlink:href="assets/img/icons/ui/sprite.svg#angle"></use>
+									</svg>
+								</span>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+		</div>
+
+		
+					<!-- FOOTER -->
+<footer class="footer">
+	<!-- top footer -->
+	<div class="footer__top">
+		<div class="footer__top-container container">
+			<!-- col -->
+			<div class="footer__top-col">
+				<ul class="footer__nav">
+					<li class="footer__nav-item">
+						<a class="footer__nav-link footer__nav-link--title">Всё о  domovoy.by</a>
+					</li>
+					<li class="footer__nav-item">
+						<a class="footer__nav-link" href="#">О компании</a>
+					</li>
+					<li class="footer__nav-item">
+						<a class="footer__nav-link" href="#">Контакты</a>
+					</li>
+					<li class="footer__nav-item">
+						<a class="footer__nav-link" href="#">Реквизиты</a>
+					</li>
+					<li class="footer__nav-item">
+						<a class="footer__nav-link" href="#">Вакансии</a>
+					</li>
+					<li class="footer__nav-item">
+						<a class="footer__nav-link" href="#">Торгово-производственный
+							комплекс "Домовой"</a>
+					</li>
+				</ul>
+			</div>
+			<!-- col -->
+			<div class="footer__top-col">
+				<ul class="footer__nav">
+					<li class="footer__nav-item">
+						<a class="footer__nav-link footer__nav-link--title">Для покупателей</a>
+					</li>
+					<li class="footer__nav-item">
+						<a class="footer__nav-link" href="#">Как заказать товар</a>
+					</li>
+					<li class="footer__nav-item">
+						<a class="footer__nav-link" href="#">Оплата</a>
+					</li>
+					<li class="footer__nav-item">
+						<a class="footer__nav-link" href="#">Рассрочка</a>
+					</li>
+					<li class="footer__nav-item">
+						<a class="footer__nav-link" href="#">Доставка</a>
+					</li>
+					<li class="footer__nav-item">
+						<a class="footer__nav-link" href="#">Гарантия и возврат товара</a>
+					</li>
+					<li class="footer__nav-item">
+						<a class="footer__nav-link" href="#">Отзывы</a>
+					</li>
+					<li class="footer__nav-item">
+						<a class="footer__nav-link" href="#">Магазины</a>
+					</li>
+					<li class="footer__nav-item">
+						<a class="footer__nav-link" href="#">Сертификаты</a>
+					</li>
+				</ul>
+			</div>
+			<!-- col -->
+			<div class="footer__top-col footer__top-col--full">
+				<ul class="footer__nav">
+					<li class="footer__nav-item">
+						<a class="footer__nav-link footer__nav-link--title">Полезное</a>
+					</li>
+					<li class="footer__nav-item">
+						<a class="footer__nav-link" href="#">Часто задаваемые вопросы</a>
+					</li>
+					<li class="footer__nav-item">
+						<a class="footer__nav-link" href="#">Блог</a>
+					</li>
+				</ul>
+				<ul class="footer__nav">
+					<li class="footer__nav-item">
+						<a class="footer__nav-link footer__nav-link--title">Парнёрам</a>
+					</li>
+					<li class="footer__nav-item">
+						<a class="footer__nav-link" href="#">Дилерам</a>
+					</li>
+					<li class="footer__nav-item">
+						<a class="footer__nav-link" href="#">Аренда помещений</a>
+					</li>
+				</ul>
+			</div>
+			<!-- col -->
+			<div class="footer__top-col">
+				<ul class="footer__nav">
+					<li class="footer__nav-item">
+						<a class="footer__nav-link footer__nav-link--title">Мебель под заказ</a>
+					</li>
+					<li class="footer__nav-item">
+						<a class="footer__nav-link" href="#">Диваны под заказ</a>
+					</li>
+					<li class="footer__nav-item">
+						<a class="footer__nav-link" href="#">Кресла под заказ</a>
+					</li>
+					<li class="footer__nav-item">
+						<a class="footer__nav-link" href="#">Тахты под заказ</a>
+					</li>
+					<li class="footer__nav-item">
+						<a class="footer__nav-link" href="#">Мягкая мебель под заказ</a>
+					</li>
+					<li class="footer__nav-item">
+						<a class="footer__nav-link" href="#">Кровати под заказ</a>
+					</li>
+				</ul>
+			</div>
+			<!-- col -->
+			<div class="footer__top-col">
+				<div class="footer__col-title">Контактная информаци</div>
+				<div class="msgrs msgrs--wrap">
+					<div class="msgrs__list">
+						<a class="msgrs__link msgrs__link--viber" href="https://msngr.link/vi/+375445100164">
+							<svg>
+								<use xlink:href="assets/img/icons/ui/sprite.svg#viber"></use>
+							</svg>
+						</a>
+						<a class="msgrs__link msgrs__link--tg" href="https://msngr.link/tg/+375445100164">
+							<svg>
+								<use xlink:href="assets/img/icons/ui/sprite.svg#telegram"></use>
+							</svg>
+						</a>
+						<a class="msgrs__link msgrs__link--phone" href="tel:+375445100164">
+							+375 44 <b>510 01 64</b>
+						</a>
+					</div>
+				</div> <br>
+				<div class="msgrs">
+					<div class="msgrs__list">
+						<a class="msgrs__link msgrs__link--tel">
+							<svg>
+								<use xlink:href="assets/img/icons/ui/sprite.svg#tel"></use>
+							</svg>
+						</a>
+						<a class="d-xl-none msgrs__link msgrs__link--phone" href="tel:+375445100164">
+							+375 44 <b>510 01 64</b>
+						</a>
+					</div>
+				</div> <br>
+				<button class="btn-link color-primary" type="button" aria-label="Копировать почту">
+					<span class="btn-link__icon">
+						<svg height="30" width="30" aria-hidden="true">
+							<use xlink:href="assets/img/icons/ui/sprite.svg#copy"></use>
+						</svg>
+					</span>
+					<span data-copy="info@autobis.org" class="btn-link__text">info@.domovoy.by</span>
+				</button> <br>
+				<div class="btns">
+					<div class="btns__list">
+						<button class="header__btn-callback btn-ic btn-ic--size_s btn-ic--round btn-ic--accent" type="button" data-trigger-modal="callback">
+							<span class="btn-ic__icon">
+								<svg aria-hidden="true">
+									<use xlink:href="assets/img/icons/ui/sprite.svg#phone-call"></use>
+								</svg>
+							</span>
+						</button>
+						<a class="sci-link" href="#" target="_blank">
+							<span class="sci-link__icon">
+								<svg height="40" aria-hidden="true">
+									<use xlink:href="assets/img/icons/ui/sprite.svg#instagram"></use>
+								</svg>
+							</span>						
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- middle footer -->
+	<div class="footer__middle">
+		<div class="footer__middle-container container">
+			<!-- col -->
+			<div class="footer__middle-col">
+				<a class="header__logo logo" href="#">
+					<img src="./assets/img/logo--light.svg" alt="Фабрика мебели «Домовой»">
+				</a> 
+				<a href="#">Карта сайта</a>
+			</div>
+			<!-- col -->
+			<div class="footer__middle-col">
+				<p>
+					000 Домовой-РП свидетельство №101327953 от 15.12.2016 выдано ГУ "Администрация свободной экономической зоны "Минск"
+				</p>
+			</div>
+			<!-- col -->
+			<div class="footer__middle-col">
+				<p>
+					Юридический адрес: Минская область,
+					п&nbsp;Привольный, ул.Мира&nbsp;53а
+				</p>
+			</div>
+			<!-- col -->
+			<div class="footer__middle-col">
+				<p>
+					Интернет-магазин зарегистрирован в торговом
+					реестре №277777 от 23.03.2015 МРИК.
+				</p>
+			</div>
+		</div>
+	</div>
+	<!-- bottom footer -->
+	<div class="footer__bottom">
+		<div class="footer__bottom-container container">
+			<a class="mx-auto ArtBro" href="https://cweb.by/" target="_blank">cweb.by</a>
+		</div>
+	</div>
+</footer>		
+		
+			</div>
+	<button class="btn-top" uk-scroll>
+		<div class="btn-top__icon">
+			<svg aria-hidden="true">
+				<use xlink:href="assets/img/icons/ui/sprite.svg#angle"></use>
+			</svg>
+		</div>
+	</button>
+	
+			<!-- jquery -->
+		<script src="assets/vendors/jquery/jquery.min.js"></script>
+		<!-- jquery event move -->
+		<script src="assets/vendors/jquery/jquery.event.move.js"></script>
+		<!-- uikit js -->
+		<script src="assets/vendors/uikit/uikit-icons.min.js"></script>
+		<script src="assets/vendors/uikit/uikit.min.js"></script>
+		<!-- inputMask -->
+		<script src="assets/vendors/inputMask/inputMask.min.js"></script>
+		<!-- swiper bundle -->
+		<script src="assets/vendors/swiper/swiper-bundle.min.js"></script>
+		<!-- main -->
+		<script src="assets/js/main.js"></script>
+	</body>
+
+</html>

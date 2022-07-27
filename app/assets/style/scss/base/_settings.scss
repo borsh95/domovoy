@@ -11,7 +11,7 @@ $utilities: (
 		values: wrap "nowrap",
 	),
 	"flex-direction": (
-		property: display,
+		property: flex-direction,
 		responsive: false,
 		class: flex,
 		values: column "column-reverse" row row-reverse,
@@ -72,6 +72,7 @@ $utilities: (
 		property: "font-size",
 		class: fz,
 		values: (
+			18r: rem(18px),
 			10: "10px",
 			12: "12px",
 			14: "14px",
@@ -121,6 +122,18 @@ $utilities: (
 			start: left,
 			center: center,
 			right: right,
+		),
+	),
+	"color": (
+		property: "color",
+		responsive: false,
+		class: color,
+		values: (
+			primary: var(--color-primary),
+			default: var(--color-default),
+			default--dark: var(--color-default--dark),
+			green: var(--color-green),
+			red: var(--color-red),
 		),
 	),
 	"border-radius": (

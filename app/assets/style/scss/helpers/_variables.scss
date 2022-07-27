@@ -1,55 +1,66 @@
 /*~~~~~~~~~~~~~~~~~~~~~~~~~ VARIABLES ~~~~~~~~~~~~~~~~~~~~~~~~~*/
 // spacing
-$spacing-side: 30px;
+$container-offset-x: 30px;
 
 // font-size
-$fz: 16px;
+$fz: 18px;
+$fz-mob: 12px;
 
 // colors
-$color-primary: #686868;
-$color-secondary: #1a676d;
-$color-secondary-alpha: rgba(26, 103, 109, 0.8);
+$color-primary: #A70F11;
+$color-primary--dark: #912926;
+$color-default: #666;
+$color-default--dark: #2f2f2f;
+$color-accent: #F8CB23;
 
-$color-danger: #ce6363;
-$color-succes: #6fa67b;
+$color-border: #CECECE;
 
-$color-text: $color-primary;
+$color-yellow: #F8CB23;
+$color-red: #ce6363;
+$color-greеn: #6fa67b;
+$color-orange: #F88923;
+
+$color-text: $color-default;
 $color-link: $color-primary;
 
-$color-bg-main: #fff;
+$color-bg: #f8f8f8;
+$color-bg-card: #fff;
 
 // durations
 $duration: 0.3s;
 
 :root {
 	/* spacings */
-	--spacing-side: #{$spacing-side};
+	--container-offset-x: #{$container-offset-x};
 
 	/*font-family*/
 	--fm-1: "Montserrat", sans-serif;
 
 	/*colors*/
 	--color-primary: #{$color-primary};
-	--color-secondary: #{$color-secondary};
-	--color-secondary-alpha: #{$color-secondary-alpha};
+	--color-primary--dark: #{$color-primary--dark};
+	--color-default: #{$color-default};
+	--color-default--dark: #{$color-default--dark};
+	--color-accent: #{$color-accent};
 
-	--color-danger: #{$color-danger};
-	--color-succes: #{$color-succes};
+	--color-yellow: #{$color-yellow};
+	--color-red: #{$color-red};
+	--color-green: #{$color-greеn};
+	--color-orange: #{$color-orange};
 
 	--color-text: #{$color-text};
 	--color-link: #{$color-link};
 
-	--color-bg-main: #{$color-bg-main};
+	--color-border: #{$color-border};
+
+	--color-bg: #{$color-bg};
+	--color-bg-card: #{$color-bg-card};
 
 	--basic-black: #000;
 	--basick-dark: #333;
 	--basick-white: #fff;
 
 	@include table {
-		--spacing-side: 20px;
-	}
-
-	@include mobile {
-		--spacing-side: 10px;
+		--container-offset-x: 20px;
 	}
 }

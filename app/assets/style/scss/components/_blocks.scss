@@ -1,1 +1,56 @@
 /*~~~~~~~~~~~~~~~~~~~~~~~~~ COMMON BLOCKS ~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.catalog-b {
+	&__collection {
+		& + & {
+			margin-top: 60px;
+		}
+	}
+
+	@include from($mobile) {
+		&__collection {
+			&-grid {
+				display: flex;
+	
+				> * {
+					min-width: 0;
+				}
+			}
+	
+			&-slider {
+				flex-grow: 1;
+			}
+
+			&-main-card {
+				flex-shrink: 0;
+				margin-right: 30px;
+				width: pr(371, 1530);
+				min-height: 220px;
+				font-size: rem(16px);
+
+				@include desctop-mid {
+					min-height: 200px;
+				}
+
+				@include desctop-mid {
+					min-height: 180px;
+				}
+			}
+		}
+	}
+
+	@include mobile {
+		&__collection {
+			& + & {
+				margin-top: 30px;
+			}
+
+			&-main-card {
+				margin-bottom: 15px;
+
+				.catalog-card__title {
+					text-align: left;
+				}
+			}
+		}
+	}
+}

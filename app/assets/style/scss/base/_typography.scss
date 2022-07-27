@@ -1,27 +1,23 @@
 /*==================== TYPOGRAPHY ====================*/
 :root {
-	--fz-h1: 36px;
+	--fz-h1: 40px;
 	--fz-h2: 36px;
-	--fz-h3: 20px;
-	--fz-h4: 18px;
+	--fz-h3: 32px;
+	--fz-h4: 24px;
+	--fz-h5: 18px;
 
 	@include desctop-min {
 		--fz-h1: 32px;
-		--fz-h2: 32px;
-	}
-
-	@include desctop-min {
-		--fz-h1: 28px;
 		--fz-h2: 28px;
-		--fz-h3: 18px;
-		--fz-h4: 16px;
+		--fz-h3: 24px;
+		--fz-h4: 20px;
 	}
 
 	@include mobile {
-		--fz-h1: 18px;
-		--fz-h2: 18px;
-		--fz-h3: 16px;
-		--fz-h4: 16px;
+		--fz-h1: 16px;
+		--fz-h2: 16px;
+		--fz-h3: 14px;
+		--fz-h4: 12px;
 	}
 }
 
@@ -32,10 +28,14 @@ h2,
 h3,
 .h3,
 h4,
-.h4 {
-	margin: 1.3em 0 em(29, 20);
+.h4,
+h5,
+.h5 {
+	margin: 1.3em 0 em(28, 24);
 	font-weight: 700;
+	font-family: var(--fm-1);
 	line-height: em(45, 36);
+	text-transform: uppercase;
 
 	&:first-child {
 		margin-top: 0;
@@ -59,11 +59,16 @@ h4,
 	font-size: var(--fz-h4);
 }
 
+h4,
+.h4 {
+	font-size: var(--fz-h5);
+}
+
 ol,
 ul,
 ol,
 p {
-	margin-bottom: em(16, 14);
+	margin-bottom: 1em;
 
 	&:last-child {
 		margin-bottom: 0;
@@ -84,16 +89,25 @@ ol li {
 	list-style-type: decimal;
 }
 
+p {
+	margin-top: 0;
+}
+
 a {
+	font-weight: 700;
+	font-style: italic;
+	text-decoration: underline;
 	color: var(--color-link);
 
 	&:hover {
-		text-decoration: underline;
+		text-decoration: none;
+		color: var(--color-link);
 	}
 }
 
+.text,
 .content {
-	font: 400 1em /#{(34/18)} var(--fm-2);
+	font: 400 #{rem(18px)}/#{(35/18)} var(--fm-1);
 
 	h2,
 	.h2,
@@ -103,8 +117,7 @@ a {
 	.h4,
 	h5,
 	.h5 {
-		margin: em(28, 20) 0 getEm(35, 20);
-		color: var(--color-primary);
+		margin: em(28, 20) 0 em(35, 20);
 
 		&:first-child {
 			margin-top: 0;
@@ -140,10 +153,10 @@ a {
 	p,
 	ul,
 	ol {
-		margin-top: getEm(28, 16);
+		margin-bottom: em(25, 18);
 
-		&:first-child {
-			margin-top: 0;
+		&:last-child {
+			margin-bottom: 0;
 		}
 	}
 
@@ -164,7 +177,7 @@ a {
 		ul,
 		ol,
 		p {
-			margin-top: getEm(26, 16);
+			margin-top: em(26, 16);
 
 			&:first-child {
 				margin-top: 0;
@@ -172,27 +185,17 @@ a {
 		}
 	}
 
+	&--size {
+		&_s {
+			font-size: 16px;
+
+			@include desctop-min {
+				font-size: 1rem;
+			}
+		}
+	}
+
 	@include tel {
 		line-height: (20/14);
-	}
-}
-
-.text {
-	font-size: 14px;
-	line-height: (25/14);
-
-	h2,
-	.h2,
-	h3,
-	.h3 {
-		margin: 1.2em 0 0.8em;
-
-		&:first-child {
-			margin-top: 0;
-		}
-
-		&:last-child {
-			margin-bottom: 0;
-		}
 	}
 }

@@ -1,14 +1,171 @@
-{% set baseClass = class.base|default('header') %}
-{% set resultClass = createBemClass(baseClass, _context.class) %}
-{% set attrss = "" %}
-
-{% if attrs %}
-{% for key, value in attrs  %}
-{% set attrss = " " ~ attrss ~ key ~ "=" ~ value %}
-{% endfor %}
-{% endif %}
-
 <!-- HEADER -->
-<header class="{{ resultClass }}" {{ attrss }}>
-	Header
+<header class="header">
+	<!-- top header -->
+	<div class="header__top">
+		<div class="header__top-container container">
+			<!-- logo -->
+			<a class="d-none d-md-inline-flex header__logo logo" href="#">
+				<img src="./assets/img/logo.svg" alt="Фабрика мебели «Домовой»">
+			</a>
+			<!-- tels -->
+			<div class="msgrs mr-md-0">
+				<div class="msgrs__list">
+					<a class="msgrs__link msgrs__link--viber" href="https://msngr.link/vi/+375445100164">
+						<svg>
+							<use xlink:href="assets/img/icons/ui/sprite.svg#viber"></use>
+						</svg>
+					</a>
+					<a class="msgrs__link msgrs__link--tg" href="https://msngr.link/tg/+375445100164">
+						<svg>
+							<use xlink:href="assets/img/icons/ui/sprite.svg#telegram"></use>
+						</svg>
+					</a>
+					<a class="msgrs__link msgrs__link--phone" href="tel:+375445100164">
+						+375 44 <b>510 01 64</b>
+					</a>
+				</div>
+			</div>
+			<!-- tels -->
+			<div class="d-md-none msgrs">
+				<div class="msgrs__list">
+					<a class="msgrs__link msgrs__link--tel">
+						<svg>
+							<use xlink:href="assets/img/icons/ui/sprite.svg#tel"></use>
+						</svg>
+					</a>
+					<a class="d-xl-none msgrs__link msgrs__link--phone" href="tel:+375445100164">
+						+375 44 <b>510 01 64</b>
+					</a>
+				</div>
+			</div>
+			<!-- header nav -->
+			<nav class="header__top-nav ml-auto">
+				<ul class="header__nav-list nav nav--direction_row">
+					<li class="nav__item">
+						<a class="nav__link" href="#">О компании</a>
+					</li>
+					<li class="nav__item">
+						<a class="nav__link" href="#">Оплата</a>
+					</li>
+					<li class="nav__item">
+						<a class="nav__link" href="#">Доставка</a>
+					</li>
+					<li class="nav__item">
+						<a class="nav__link" href="#">Рассрочка</a>
+					</li>
+					<li class="nav__item">
+						<a class="nav__link" href="#">Производство</a>
+					</li>
+					<li class="nav__item">
+						<a class="nav__link" href="#">Блог</a>
+					</li>
+				</ul>
+			</nav>
+			<button class="d-md-none header__btn-callback btn-ic btn-ic--size_s btn-ic--round btn-ic--accent" type="button"
+				data-trigger-modal="callback">
+				<span class="btn-ic__icon">
+					<svg aria-hidden="true">
+						<use xlink:href="assets/img/icons/ui/sprite.svg#phone-call"></use>
+					</svg>
+				</span>
+			</button>
+		</div>
+	</div>
+	<!-- middle header -->
+	<div class="header__middle">
+		<div class="header__middle-container container">
+			<!-- logo -->
+			<a class="d-md-none header__logo logo" href="#">
+				<img src="./assets/img/logo.svg" alt="Фабрика мебели «Домовой»">
+			</a>
+			<!-- btn hamburger -->
+			<button class="header__btn-catalog btn btn--size_xxs btn--bg_dark btn--opening" type="button"
+				aria-label="Открыть каталог">
+				<span class="btn__hamburger hamburger">
+					<span></span>
+				</span>
+				<span class="btn__value">Каталог</span>
+			</button>
+			<!-- search -->
+			<form class="mr-sm-0 header__search search">
+				<label class="search__inner">
+					<input class="search__input" type="search" placeholder="Поиск">
+					<button class="search__submit" type="submit" aria-label="Поиск">
+						<svg>
+							<use xlink:href="./assets/img/icons/ui/sprite.svg#search"></use>
+						</svg>
+					</button>
+				</label>
+			</form>
+			<div class="header__btns-icon">
+				<a class="btn-ic btn-ic--size_l btn-ic--compare" href="#">
+					<span class="btn-ic__icon">
+						<svg aria-hidden="true">
+							<use xlink:href="assets/img/icons/ui/sprite.svg#balance"></use>
+						</svg>
+					</span>
+					<strong class="btn-ic__count">0</strong>
+				</a>
+				<a class="btn-ic btn-ic--size_l btn-ic--fav" href="#">
+					<span class="btn-ic__icon">
+						<svg aria-hidden="true">
+							<use xlink:href="assets/img/icons/ui/sprite.svg#heart"></use>
+						</svg>
+					</span>
+					<strong class="btn-ic__count">0</strong>
+				</a>
+				<a class="btn-ic btn-ic--size_l btn-ic--basket" href="#">
+					<span class="btn-ic__icon">
+						<svg aria-hidden="true">
+							<use xlink:href="assets/img/icons/ui/sprite.svg#cart"></use>
+						</svg>
+					</span>
+					<strong class="btn-ic__count">0</strong>
+				</a>
+			</div>
+		</div>
+	</div>
+	<!-- header bottom -->
+	<div class="header__bottom" theme-color="dark">
+		<div class="header__bottom-container container">
+			<!-- header nav -->
+			<nav class="header__bottom-nav">
+				<ul class="header__nav-list nav nav--direction_row">
+					<li class="nav__item">
+						<a class="nav__link" href="#">Акции</a>
+					</li>
+					<li class="nav__item">
+						<a class="nav__link" href="#">Распродажи</a>
+					</li>
+					<li class="nav__item">
+						<a class="nav__link" href="#">Диваны</a>
+					</li>
+					<li class="nav__item">
+						<a class="nav__link" href="#">Кровати</a>
+					</li>
+					<li class="nav__item">
+						<a class="nav__link" href="#">Элитная</a>
+					</li>
+				</ul>
+			</nav>
+			<!-- copy -->
+			<button class="ml-auto btn-link" type="button" aria-label="Копировать почту" title="Почта">
+				<span class="btn-link__icon">
+					<svg height="30" width="30" aria-hidden="true">
+						<use xlink:href="assets/img/icons/ui/sprite.svg#copy"></use>
+					</svg>
+				</span>
+				<span data-copy="info@autobis.org" class="btn-link__text">info@.domovoy.by</span>
+			</button>
+			<!-- copy -->
+			<a class="fw-700 btn-link" aria-label="Наши магазины">
+				<span class="btn-link__icon">
+					<svg height="30" width="30" aria-hidden="true">
+						<use xlink:href="assets/img/icons/ui/sprite.svg#loc"></use>
+					</svg>
+				</span>
+				<span class="btn-link__text">Наши магазины</span>
+			</a>
+		</div>
+	</div>
 </header>
